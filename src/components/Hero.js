@@ -2,7 +2,7 @@ import React from "react";
 import Header from "./Header";
 import Banner from "./Banner";
 
-import { makeStyles } from "@material-ui/core";
+import { Container, makeStyles } from "@material-ui/core";
 import bg from "../assets/BG.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -16,8 +16,10 @@ const Hero = () => {
   const classes = useStyles();
   return (
     <section className={classes.hero}>
-      <Header />
-      <Banner />
+      <Container>
+        <Header />
+        <Banner />
+      </Container>
     </section>
   );
 };

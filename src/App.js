@@ -1,11 +1,6 @@
 import React from "react";
 import Layout from "./components/Layout";
-import {
-  Container,
-  CssBaseline,
-  createMuiTheme,
-  ThemeProvider,
-} from "@material-ui/core";
+import { CssBaseline, createMuiTheme, ThemeProvider } from "@material-ui/core";
 
 const theme = createMuiTheme({
   typography: {
@@ -27,9 +22,7 @@ function App() {
   return (
     <ThemeProvider theme={theme}>
       <CssBaseline />
-      <Container>
-        <Layout />
-      </Container>
+      <Layout />
     </ThemeProvider>
   );
 }

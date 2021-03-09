@@ -9,14 +9,13 @@ const useStyles = makeStyles((theme) => ({
     fontSize: "0.875rem",
     textTransform: "capitalize",
     marginLeft: 26,
-    height: 62,
   },
 }));
 
 const MoreBtn = () => {
   const classes = useStyles();
   return (
-    <Button className={classes.btn} endIcon={<ChevronDown />}>
+    <Button className={classes.btn} endIcon={<ChevronDown />} size="large">
       More
     </Button>
   );

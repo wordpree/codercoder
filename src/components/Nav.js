@@ -17,6 +17,22 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: 700,
     lineHeight: 2,
     fontSize: "0.875rem",
+    position: "relative",
+    "&::after": {
+      content: "''",
+      display: "flex",
+      height: 2,
+      width: "100%",
+      position: "absolute",
+      background: "#8C30F5",
+      transformOrigin: "right",
+      transform: "scale(0)",
+      transition: "transform 0.25s ease-in",
+    },
+    "&:hover::after": {
+      transform: "scale(1)",
+      transformOrigin: "left",
+    },
   },
 }));
 
